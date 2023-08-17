@@ -35,7 +35,8 @@ public class PlayerNameButton : MonoBehaviour
             var data = new Dictionary<string, object> { { "PlayerName", Player.PName.text } };
             await CloudSaveService.Instance.Data.ForceSaveAsync(data);
 
-            SceneManager.LoadScene(sceneName: "PlayScene");
+            //SceneManager.LoadScene(sceneName: "PlayScene");
+            SceneManager.LoadScene(sceneName: "Character Selection Scene");
         }
         
     }

@@ -54,7 +54,8 @@ public class EnterButton : MonoBehaviour
                 var PlayerCondition = new Dictionary<string, object> { { "PlayerCondition", "Returning" } };
                 await CloudSaveService.Instance.Data.ForceSaveAsync(PlayerCondition);
 
-                SceneManager.LoadScene(sceneName: "PlayScene");
+                //SceneManager.LoadScene(sceneName: "PlayScene");
+                SceneManager.LoadScene(sceneName: "ShowCharacterScene");
             }
         }
         else
